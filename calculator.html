@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<head>
+ <link rel="stylesheet" href="colors.css">
+<title>My Calculator</title>
+<style>
+input[type="button"] {
+            width: 100%;
+            padding: 5px 10px;
+            background-color: #6a5acd;
+            color: yellow;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+
+        
+		</style>
+</head>
+
+<body>
+ 
+<table>
+
+	<tr>
+		<th > <img src="C:\Users\Apurba Das\Documents\PWC TRAINING CODED\29th\lines.png" alt = "UnderConstruction area" height="50" width="30"/>   </th>
+		<th style="width:100%" >Standard</th>
+	</tr>
+	<tr>
+	<td colspan="6" valign="bottom">
+	<div class="keys">
+		  <div class="box">  
+        <div class="display">  
+        <input type="text" readonly size="18" id="d">  
+        </div>
+		</td>
+	</tr>
+
+	
+	<tr style="width:50">
+		<td> <input type ="button" value="MC" > </td>
+		<td><input type ="button" value="MR" ></td>
+		<td> <input type ="button" value="MS" ></td>
+		<td> <input type ="button" value="M+" > </td>
+		<td rowspan="7"  valign="center" > <input type ="button" value="M-" > </td>
+		
+		
+	</tr>
+	<tr>
+		<td> <input type ="button" value="%"OnClick="Calculator.Input.value = v('%')" ></td>
+		<td> <input type ="button" value="CE" > </td>
+		<td> <input type ="button" value="C" > </td>
+		<td><input type ="button" value="Backspace" ></td>
+		
+	</tr>
+	<tr>
+		<td><input type ="button" value="1/X" OnClick="Calculator.Input.value = v('1/x')"> </td>
+		<td> <input type ="button" value="x^2" OnClick="Calculator.Input.value = v('x^2')" > </td>
+		<td> <input type ="button" value="x^(1/2)" OnClick="Calculator.Input.value = v('x^(1/2)')"> </td>
+		<td>  <input type ="button" value="/" OnClick="Calculator.Input.value = c('/')" > </td>
+		
+	</tr>
+	<tr>
+		<td> <input type ="button" value="7"  OnClick="Calculator.Input.value = v('7')"> </td>
+		<td> <input type ="button" value="8" OnClick="Calculator.Input.value = v('8')" > </td>
+		<td> <input type ="button" value="9"  OnClick="Calculator.Input.value = v('9')"> </td>
+		<td> <input type ="button" value="X" OnClick="Calculator.Input.value = c('')"> </td>
+	</tr>
+	<tr>
+		<td> <input type ="button" value="4"  OnClick="Calculator.Input.value = v('4')"> </td>
+		<td> <input type ="button" value="5" OnClick="Calculator.Input.value = v('5')" > </td>
+		<td> <input type ="button" value="6"  OnClick="Calculator.Input.value = v('6')"> </td>
+		<td> <input type ="button" value="-" OnClick="Calculator.Input.value = c('-')"> </td>
+		
+	</tr>
+	<tr>
+		<td> <input type ="button" value="1" OnClick="v('1')" > </td>
+		<td> <input type ="button" value="2" OnCLick="v('2')"> </td>
+		<td> <input type ="button" value="3" OnCLick="v('3')"> </td>
+		<td> <input type ="button" value="+" OnCLick="c('+')"> </td>
+		
+	</tr>
+	<tr>
+		<td> <input type ="button" value="v(+/-)" OnClick="Calculator.Input.value = v('+/-')" > </td>
+		<td>  <input type ="button" value="0" OnClick="Calculator.Input.value = v('0')" > </td>
+		<td> <input type ="button" value="." OnClick="Calculator.Input.value = v('.')" > </td>
+		<td> <input type ="button" value="="  OnClick="c('=')"> </td>
+		
+	</tr>
+</div>	
+</div>
+</table>
+<script>
+function c(val)    
+{    
+document.getElementById("d").value=val;    
+}    
+function v(val)    
+{document.getElementById("d").value+=val;    
+}    
+</script>
+</body>
+</html>
